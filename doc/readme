@@ -1,0 +1,46 @@
+overview
+--
+pic_spi is a code allowing to turn a pic18f4550 into
+an avr stk500v1 compliant spi programmer. It makes it
+fully compatible with avrdude(www.nongnu.org/avrdude/).
+
+
+installing
+--
+the pic18f source code is built using the SDCC svn
+version (sdcc.sourceforge.net). then program the 18f
+with the resulting hex file. the programmer is ready
+to accept commands from avrdude on the serial port.
+
+
+using
+--
+avrdude -m128 -p /dev/ttyUSB0 -c stk500v1 -Uflash:foo.hex
+
+
+issues
+--
+parameters not well supported
+
+
+todos
+--
+use usb instead of serial
+implement read timeouts
+
+
+repository
+--
+github://
+
+
+author
+--
+fabien le mentec, texane@gmail.com
+
+
+licencing
+--
+whatever you do with this software, the author can
+not be held responsible for any (good or bad) thing
+occuring.
