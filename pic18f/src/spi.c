@@ -2,7 +2,7 @@
 ** Made by fabien le mentec <texane@gmail.com>
 ** 
 ** Started on  Sat Nov 14 17:18:15 2009 texane
-** Last update Tue Nov 17 18:14:49 2009 texane
+** Last update Sun Nov 22 17:43:05 2009 texane
 */
 
 
@@ -19,14 +19,14 @@
 #define SPI_PIN_MOSI PORTAbits.RA0 /* PE0, serial data in */
 #define SPI_TRIS_MOSI TRISAbits.TRISA0
 
-#define SPI_PIN_MISO PORTAbits.RA1 /* PE1, serial data out */
-#define SPI_TRIS_MISO TRISAbits.TRISA1
+#define SPI_PIN_RESET PORTAbits.RA1 /* reset */
+#define SPI_TRIS_RESET TRISAbits.TRISA1
 
 #define SPI_PIN_SCK PORTAbits.RA2 /* PB1, serial clock */
 #define SPI_TRIS_SCK TRISAbits.TRISA2
 
-#define SPI_PIN_RESET PORTAbits.RA3 /* reset */
-#define SPI_TRIS_RESET TRISAbits.TRISA3
+#define SPI_PIN_MISO PORTAbits.RA3 /* PE1, serial data out */
+#define SPI_TRIS_MISO TRISAbits.TRISA3
 
 
 /* wait routine */

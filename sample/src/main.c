@@ -40,6 +40,7 @@ int main(void)
   static unsigned char led = 0;
   static unsigned int i;
   static unsigned int j;
+  static unsigned int k;
 
   DDRB=0xFF;
 
@@ -49,6 +50,7 @@ int main(void)
 
       led ^= (1 << 3);
 
+      for (k = 0; k < 10; ++k)
       for (j = 0; j < 0xf0; ++j)
 	for (i = 0; i < 0xf0; ++i)
 	  __asm__ __volatile__ ("nop\t\n");
