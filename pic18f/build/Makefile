@@ -9,7 +9,7 @@
 PATH	:=	$(PATH):/usr/share/pk2
 
 
-CC	?=	/home/texane/proj/present/pic/18f4550/tools/sdcc/bin/sdcc
+CC	:=	sdcc
 CFLAGS	:=	-mpic16						\
 		--use-non-free					\
 		-p18f4550 -Dpic18f4550				\
